@@ -8,12 +8,20 @@
 RAILS_GEM_VERSION = '2.3.8' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
+require File.join(File.dirname(__FILE__), '../vendor/plugins/lolita_engines/boot')
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
   # Gems
   config.gem "capistrano-ext", :lib => "capistrano"
   config.gem "configatron"
+  
+  config.plugins = [ :lolita_engines, :lolita, :all ]
+  config.plugin_paths += ["#{RAILS_ROOT}/vendor/plugins/lolita/plugins"]
+  config.i18n.default_locale = :en
+  config.i18n.load_path << Dir[File.join(RAILS_ROOT, 'config', 'locales', '**', '*.{rb,yml}')]
+  config.i18n.load_path << Dir[File.join(RAILS_ROOT, 'vendor', 'plugins', 'lolita', 'config', 'locales', '**', 
+  '*.{rb,yml}')]
 
   # Make Time.zone default to the specified zone, and make Active Record store time values
   # in the database in UTC, and return them converted to the specified local zone.
