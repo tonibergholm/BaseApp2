@@ -12,7 +12,7 @@ h2. Quickstart
 
 Ok, before you dive in :-)
 
-These 6 simple steps are the essentials to get you smoothly up and running...
+These 5 simple steps are the essentials to get you smoothly up and running...
 
 # Create your own config/database.yml (you can copy one of the sample files in there and edit it)
 # Edit the config/config.yml file to suit your needs
