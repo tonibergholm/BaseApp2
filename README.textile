@@ -2,6 +2,12 @@ h1. Welcome to BaseApp2
 
 BaseApp2 is a default Ruby on Rails project that kick-starts your next Rails project.
 
+h2. Wishlist
+
+# Admin configurable colour schemes
+# Rails 3 Upgrade
+# Site wide announcement system within Admin section
+
 h2. Quickstart
 
 Ok, before you dive in :-)
