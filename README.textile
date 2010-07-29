@@ -2,14 +2,6 @@ h1. Welcome to BaseApp2
 
 BaseApp2 is a default Ruby on Rails project that kick-starts your next Rails project.
 
-h2. Roadmap for Rails 3 Version of BaseApp2
-
-I am planning on using the following for the BaseApp2 Rails 3 version.
-
-# CanCan Authentication
-# Same theme and styling as the current version
-..to be continued...
-
 h2. Quickstart
 
 Ok, before you dive in :-)
