@@ -57,6 +57,7 @@ h2. Features
 * Administration panel where you can:
 ** Manage users (add, delete, purge, suspend, activate, send new passwords)
 ** Manage settings 
+** Manage site wide timed announcements
 * User authentication, with password recovery and login recovery and account activation (by email)
 * User Profiles:
 ** Location, Website, Full name fields by default, easily extendible.
@@ -69,7 +70,6 @@ h2. Features
 * Mobile Ready
 ** Auto detect mobile users/visitors and display different views.
 ** Based on the JQTouch framework, making it easy to theme.
-* Site side timed announcements manageable from the Admin section.
 
 h2. Screenshots
 
