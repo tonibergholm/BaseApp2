@@ -11,6 +11,7 @@
 
 <% @announcements.each do |announcement| %>
   <tr>
+    <td><%=h announcement.headline %></td>
     <td><%=h announcement.message %></td>
     <td><%=h announcement.starts_at %></td>
     <td><%=h announcement.ends_at %></td>

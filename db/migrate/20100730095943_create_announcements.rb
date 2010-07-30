@@ -1,6 +1,7 @@
 class CreateAnnouncements < ActiveRecord::Migration
   def self.up
     create_table :announcements do |t|
+      t.text :headline
       t.text :message
       t.datetime :starts_at
       t.datetime :ends_at
