@@ -1,0 +1,5 @@
+<div id="announcement" class="container">
+    <%- for announcement in announcements_for_display -%>
+      <p><%=h announcement.message -%></p>
+    <%- end -%>
+</div>

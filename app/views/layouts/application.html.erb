@@ -27,7 +27,9 @@
   </div>
 
   <div id="main">
-
+	
+	<%= render :partial => "shared/announcements" unless announcements_for_display.empty? -%>
+	
     <div id="left">
 	  <%= flash_message %>
 
