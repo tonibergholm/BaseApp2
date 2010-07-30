@@ -69,7 +69,7 @@ h2. Features
 * Mobile Ready
 ** Auto detect mobile users/visitors and display different views.
 ** Based on the JQTouch framework, making it easy to theme.
-** Site side timed announcements manageable from the Admin section.
+* Site side timed announcements manageable from the Admin section.
 
 h2. Screenshots
 
