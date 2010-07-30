@@ -3,7 +3,7 @@
 
 development: &local
     site_name: BaseApp2
-    site_namemobile: BaseApp2 Mobile
+    site_namemobile: BaseApp2
     site_url: baseapp2.local
     
     company_name: BaseApp2 Ltd
@@ -16,7 +16,7 @@ development: &local
 
 production:
     site_name: BaseApp2
-    site_namemobile: BaseApp2 Mobile
+    site_namemobile: BaseApp2
     site_url: www.baseapp2.com
     
     company_name: BaseApp2 Ltd
