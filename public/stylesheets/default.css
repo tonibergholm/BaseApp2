@@ -122,6 +122,7 @@ div#announcement.container {
   	border-top: 1px solid #f90;
   	border-bottom: 1px solid #f90;
   	padding: 3px 25px;
+	margin-top: -10px;
   	margin-bottom:10px;
 	width: 93.5%;
 }
