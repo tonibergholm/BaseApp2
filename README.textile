@@ -75,7 +75,7 @@ h2. Screenshots
 
 Desktop Version
 <img src="http://cl.ly/b454e8e53cedd1fbe7b5/content" alt="BaseApp2" width="800px"/>
-<img src="http://cl.ly/fd7231dd4f6c4368ffb3/content" alt="BaseApp2" width="800px"/>
+<img src="http://cl.ly/c2abfcdedd3acbfac76c/content" alt="BaseApp2" width="800px"/>
 
 Mobile Version
 <img src="http://cl.ly/f7907620948aa56887a8/content" alt="BaseApp2 Mobile" height="400px" />
