@@ -6,7 +6,6 @@ h2. Wishlist
 
 # Admin configurable colour schemes
 # Rails 3 Upgrade
-# Site wide announcement system within Admin section
 
 h2. Quickstart
 
@@ -70,6 +69,7 @@ h2. Features
 * Mobile Ready
 ** Auto detect mobile users/visitors and display different views.
 ** Based on the JQTouch framework, making it easy to theme.
+** Site side timed announcements manageable from the Admin section.
 
 h2. Screenshots
 
