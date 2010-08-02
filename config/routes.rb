@@ -37,6 +37,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.root :controller => 'dashboard', :action => 'index'
     admin.resources :settings
     admin.resources :announcements
+    admin.resources :commits
     admin.resources :users, :member => { :suspend   => :put,
                                          :unsuspend => :put,
                                          :activate  => :put, 
