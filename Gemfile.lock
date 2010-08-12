@@ -1,0 +1,67 @@
+--- 
+dependencies: 
+  post_commit: 
+    group: 
+    - :default
+    version: ">= 0"
+  rails: 
+    group: 
+    - :default
+    version: = 2.3.8
+  sqlite3-ruby: 
+    group: 
+    - :default
+    version: ">= 0"
+  configatron: 
+    group: 
+    - :default
+    version: ">= 0"
+  capistrano-ext: 
+    group: 
+    - :default
+    version: ">= 0"
+specs: 
+- rake: 
+    version: 0.8.7
+- activesupport: 
+    version: 2.3.8
+- rack: 
+    version: 1.1.0
+- actionpack: 
+    version: 2.3.8
+- actionmailer: 
+    version: 2.3.8
+- activerecord: 
+    version: 2.3.8
+- activeresource: 
+    version: 2.3.8
+- highline: 
+    version: 1.6.1
+- net-ssh: 
+    version: 2.0.23
+- net-scp: 
+    version: 1.0.2
+- net-sftp: 
+    version: 2.0.4
+- net-ssh-gateway: 
+    version: 1.0.1
+- capistrano: 
+    version: 2.5.19
+- capistrano-ext: 
+    version: 1.2.1
+- yamler: 
+    version: 0.1.0
+- configatron: 
+    version: 2.6.3
+- json: 
+    version: 1.4.6
+- post_commit: 
+    version: 0.1.2
+- rails: 
+    version: 2.3.8
+- sqlite3-ruby: 
+    version: 1.3.1
+hash: dac25bb6fa97ba3934f1a3241d0fac9d4145d4ad
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
