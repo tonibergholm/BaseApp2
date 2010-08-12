@@ -174,9 +174,9 @@ end
 module Bundler
   ENV_LOADED   = true
   LOCKED_BY    = '0.9.26'
-  FINGERPRINT  = "dac25bb6fa97ba3934f1a3241d0fac9d4145d4ad"
+  FINGERPRINT  = "554f6581be6186e510c9ee8420a450100d0e5d79"
   HOME         = '/Users/mancjew/.bundle/ruby/1.8/bundler'
-  AUTOREQUIRES = {:default=>[["capistrano-ext", false], ["configatron", false], ["post_commit", false], ["rails", false], ["sqlite3-ruby", false]]}
+  AUTOREQUIRES = {:default=>[["capistrano-ext", false], ["configatron", false], ["devise", false], ["post_commit", false], ["rails", false], ["sqlite3-ruby", false]], :development=>[["mongrel", false]]}
   SPECS        = [
         {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/rake-0.8.7.gemspec", :name=>"rake"},
         {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/activesupport-2.3.8.gemspec", :name=>"activesupport"},
@@ -192,9 +192,16 @@ module Bundler
         {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/net-ssh-gateway-1.0.1/lib"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/net-ssh-gateway-1.0.1.gemspec", :name=>"net-ssh-gateway"},
         {:load_paths=>["/Users/mancjew/.bundle/ruby/1.8/gems/capistrano-2.5.19/lib"], :loaded_from=>"/Users/mancjew/.bundle/ruby/1.8/specifications/capistrano-2.5.19.gemspec", :name=>"capistrano"},
         {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/capistrano-ext-1.2.1/lib"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/capistrano-ext-1.2.1.gemspec", :name=>"capistrano-ext"},
+        {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/cgi_multipart_eof_fix-2.5.0/lib"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/cgi_multipart_eof_fix-2.5.0.gemspec", :name=>"cgi_multipart_eof_fix"},
         {:load_paths=>["/Users/mancjew/.bundle/ruby/1.8/gems/yamler-0.1.0/lib"], :loaded_from=>"/Users/mancjew/.bundle/ruby/1.8/specifications/yamler-0.1.0.gemspec", :name=>"yamler"},
         {:load_paths=>["/Users/mancjew/.bundle/ruby/1.8/gems/configatron-2.6.3/lib"], :loaded_from=>"/Users/mancjew/.bundle/ruby/1.8/specifications/configatron-2.6.3.gemspec", :name=>"configatron"},
+        {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/daemons-1.0.10/lib"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/daemons-1.0.10.gemspec", :name=>"daemons"},
+        {:load_paths=>["/Users/mancjew/.bundle/ruby/1.8/gems/warden-0.10.7/lib"], :loaded_from=>"/Users/mancjew/.bundle/ruby/1.8/specifications/warden-0.10.7.gemspec", :name=>"warden"},
+        {:load_paths=>["/Users/mancjew/.bundle/ruby/1.8/gems/devise-1.0.7/lib"], :loaded_from=>"/Users/mancjew/.bundle/ruby/1.8/specifications/devise-1.0.7.gemspec", :name=>"devise"},
+        {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/fastthread-1.0.7/lib", "/opt/local/lib/ruby/gems/1.8/gems/fastthread-1.0.7/ext"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/fastthread-1.0.7.gemspec", :name=>"fastthread"},
+        {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/gem_plugin-0.2.3/lib"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/gem_plugin-0.2.3.gemspec", :name=>"gem_plugin"},
         {:load_paths=>["/Users/mancjew/.bundle/ruby/1.8/gems/json-1.4.6/ext/json/ext", "/Users/mancjew/.bundle/ruby/1.8/gems/json-1.4.6/ext", "/Users/mancjew/.bundle/ruby/1.8/gems/json-1.4.6/lib"], :loaded_from=>"/Users/mancjew/.bundle/ruby/1.8/specifications/json-1.4.6.gemspec", :name=>"json"},
+        {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib", "/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/ext"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/mongrel-1.1.5.gemspec", :name=>"mongrel"},
         {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/post_commit-0.1.2/lib"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/post_commit-0.1.2.gemspec", :name=>"post_commit"},
         {:load_paths=>["/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib"], :loaded_from=>"/opt/local/lib/ruby/gems/1.8/specifications/rails-2.3.8.gemspec", :name=>"rails"},
         {:load_paths=>["/Users/mancjew/.bundle/ruby/1.8/gems/sqlite3-ruby-1.3.1/lib"], :loaded_from=>"/Users/mancjew/.bundle/ruby/1.8/specifications/sqlite3-ruby-1.3.1.gemspec", :name=>"sqlite3-ruby"},

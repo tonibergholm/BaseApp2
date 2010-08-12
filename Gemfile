@@ -8,3 +8,9 @@ gem "capistrano-ext"
 gem "configatron"
 gem "post_commit"
 gem "sqlite3-ruby"
+gem "devise","1.0.7"
+
+
+group :development do
+  gem "mongrel"
+end
