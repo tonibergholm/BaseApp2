@@ -31,6 +31,5 @@ Rails::Initializer.run do |config|
     :key => '_base_session',
     :secret      => '7389ea9180b15f1495a5e73a69a893311f859ccff1ffd0fa2d7ea25fdf1fa324f280e6ba06e3e5ba612e71298d8fbe7f15fd7da2929c45a9c87fe226d2f77347'
   }
-  
   # config.active_record.observers 
 end

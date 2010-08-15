@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   # include Authorization::AasmRoles
 
   # Include default devise modules. Others available are:
-  devise :database_authenticatable, :http_authenticatable, :recoverable, :registarable, :rememberable
+  devise :database_authenticatable, :http_authenticatable, :recoverable, :registerable, :rememberable
 
   validates_presence_of     :login
   validates_length_of       :login,    :within => 3..40

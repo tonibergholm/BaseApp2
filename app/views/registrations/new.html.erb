@@ -1,11 +1,8 @@
-<% (@user.password = @user.password_confirmation = nil) rescue nil %>
-
 <% content_for :header do -%>
 Create a new <%= configatron.site_name %> account
 <% end -%>
 
-<% form_for :user, :url => users_path do |f| -%>
-	<%= error_messages_for :user %>
+<% form_for resource_name, resource, :url => registration_path(resource_name) do |f| -%>
 	<fieldset id="oldfashioned_form">	
 		<legend>Your Details</legend>
 		<p><label for="login">Login</label><br/>
@@ -20,7 +17,7 @@ Create a new <%= configatron.site_name %> account
 		<p><label for="password_confirmation">Confirm Password</label><br/>
 		<%= f.password_field :password_confirmation %></p>
 	</fieldset>
-	
+
 	<ul>
 		<li><%= link_to "Already signed up? Login now!", new_user_session_path %></li>
 	</ul>
@@ -28,4 +25,7 @@ Create a new <%= configatron.site_name %> account
 	<div id="submitbutton">
 		<p><%= submit_tag 'Sign up' %></p>
 	</div>
-<% end %>
+
+<% end -%>
+
+<%= render :partial => "shared/devise_links" %>
