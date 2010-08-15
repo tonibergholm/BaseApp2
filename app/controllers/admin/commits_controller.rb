@@ -1,7 +1,4 @@
-class Admin::CommitsController < ApplicationController
-  require_role :admin
-  layout 'admin'
-  
+class Admin::CommitsController < Admin::BaseController  
   def index
     # Render index.html.erb
   end

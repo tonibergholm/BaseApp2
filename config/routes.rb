@@ -1,8 +1,9 @@
 # See how all your routes lay out with "rake routes"
 ActionController::Routing::Routes.draw do |map|
+
   map.devise_for :users
 
-  map.resources :announcements
+  # map.resources :announcements
 
   
   # RESTful rewrites
@@ -10,12 +11,12 @@ ActionController::Routing::Routes.draw do |map|
   map.open_id_complete '/opensession', :controller => "sessions", :action => "create", :requirements => { :method => :get }
   map.open_id_create '/opencreate', :controller => "users", :action => "create", :requirements => { :method => :get }
     
-  map.resources :users, :member => { :edit_password => :get,
-                                     :update_password => :put,
-                                     :edit_email => :get,
-                                     :update_email => :put,
-                                     :edit_avatar => :get, 
-                                     :update_avatar => :put }
+  # map.resources :users, :member => { :edit_password => :get,
+  #                                    :update_password => :put,
+  #                                    :edit_email => :get,
+  #                                    :update_email => :put,
+  #                                    :edit_avatar => :get, 
+  #                                    :update_avatar => :put }
                             
   map.resource :session
     

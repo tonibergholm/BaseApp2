@@ -3,6 +3,7 @@ Create a new <%= configatron.site_name %> account
 <% end -%>
 
 <% form_for resource_name, resource, :url => registration_path(resource_name) do |f| -%>
+  <%= f.error_messages %>
 	<fieldset id="oldfashioned_form">	
 		<legend>Your Details</legend>
 		<p><label for="login">Login</label><br/>

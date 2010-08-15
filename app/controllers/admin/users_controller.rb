@@ -1,6 +1,4 @@
-class Admin::UsersController < ApplicationController
-  require_role :admin
-  layout 'admin'
+class Admin::UsersController < Admin::BaseController
   
   %w(email login).each do |attr|
     in_place_edit_for :user, attr.to_sym

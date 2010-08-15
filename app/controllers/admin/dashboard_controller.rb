@@ -1,6 +1,4 @@
-class Admin::DashboardController < ApplicationController
-  require_role :admin
-  layout 'admin'
+class Admin::DashboardController < Admin::BaseController
   
   def index
   end

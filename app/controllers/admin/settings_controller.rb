@@ -1,7 +1,4 @@
-class Admin::SettingsController < ApplicationController
-  require_role :admin
-  layout 'admin'
-  
+class Admin::SettingsController < Admin::BaseController  
   def index
     # Render index.html.erb
   end

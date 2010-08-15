@@ -1,7 +1,7 @@
 require 'digest/sha1'
 
 class User < ActiveRecord::Base
-  # include Authorization::AasmRoles
+  include AasmRoles
 
   # Include default devise modules. Others available are:
   devise :database_authenticatable, :http_authenticatable, :recoverable, :registerable, :rememberable
@@ -36,16 +36,13 @@ class User < ActiveRecord::Base
   # has_role? simply needs to return true or false whether a user has a role or not.  
   # It may be a good idea to have "admin" roles return true always
   def has_role?(role)
-    list ||= self.roles.collect(&:name)
-    list.include?(role.to_s) || list.include?('admin')
+    role_symbols.include?(role.to_sym) || role_symbols.include?(:admin)
   end
-
-  # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
-  def self.authenticate(login, password)
-    u = find_in_state :first, :active, :conditions => {:login => login} # need to get the salt
-    u && u.authenticated?(password) ? u : nil
+  
+  def role_symbols
+    @role_symbols ||= roles.map {|r| r.name.underscore.to_sym }
   end
-
+  
   def openid_login?
     !identity_url.blank? #|| (AppConfig.enable_facebook_auth && !facebook_id.blank?)
   end
@@ -64,12 +61,12 @@ class User < ActiveRecord::Base
     errors.add_to_base("Invalid OpenID URL")
   end
   
-  def self.find_by_login_or_email(login_or_email)
-    find(:first, :conditions => ['login = ? OR email = ?', login_or_email, login_or_email])
-  rescue
-    nil
-  end
-    
+  def self.find_for_authentication(conditions)
+    conditions = ["login = ? or email = ?", conditions[authentication_keys.first], conditions[authentication_keys.first]]
+    # raise StandardError, conditions.inspect
+    super
+  end  
+
 protected
 
 

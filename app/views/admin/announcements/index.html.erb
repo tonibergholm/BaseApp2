@@ -1,0 +1,27 @@
+<% content_for :header do -%>
+	Announcements
+<% end -%>
+
+<table class="index">
+  <tr>
+    <th>Message</th>
+    <th>Starts at</th>
+    <th>Ends at</th>
+  </tr>
+
+<% @announcements.each do |announcement| %>
+  <tr>
+    <td><%=h announcement.headline %></td>
+    <td><%=h announcement.message %></td>
+    <td><%=h announcement.starts_at %></td>
+    <td><%=h announcement.ends_at %></td>
+    <td><%= link_to 'Show', admin_announcement_path(announcement) %></td>
+    <td><%= link_to 'Edit', edit_admin_announcement_path(announcement) %></td>
+    <td><%= link_to 'Destroy', admin_announcement_path(announcement), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New announcement', new_admin_announcement_path %>
