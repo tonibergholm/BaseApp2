@@ -3,6 +3,12 @@ ActionController::Routing::Routes.draw do |map|
 
   map.devise_for :users
 
+  map.resources :users, :member => { :edit_password => :get,
+                                     :update_password => :put,
+                                     :edit_email => :get,
+                                     :update_email => :put,
+                                     :edit_avatar => :get, 
+                                     :update_avatar => :put }
   # map.resources :announcements
 
   
