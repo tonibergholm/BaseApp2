@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100730095943) do
+ActiveRecord::Schema.define(:version => 20100802191657) do
 
   create_table "announcements", :force => true do |t|
     t.text     "headline"
@@ -44,6 +44,14 @@ ActiveRecord::Schema.define(:version => 20100730095943) do
     t.text     "description"
     t.string   "field_type",  :default => "string"
     t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "stats", :force => true do |t|
+    t.string   "header"
+    t.text     "body"
+    t.datetime "posted"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

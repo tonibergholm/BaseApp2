@@ -5,7 +5,7 @@ BaseApp2 is a default Ruby on Rails project that kick-starts your next Rails pro
 h2. Wishlist
 
 # Admin configurable colour schemes
-# Rails 3 Upgrade
+# Rails 3 Upgrade --see rails3 branch
 
 h2. Quickstart
 
